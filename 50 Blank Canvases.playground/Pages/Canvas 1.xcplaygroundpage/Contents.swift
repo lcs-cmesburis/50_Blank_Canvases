@@ -13,7 +13,28 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 400, height: 300)
+let canvas = Canvas(width: 500, height: 500)
+
+canvas.defaultBorderWidth = 7
+
+for x in stride (from: 25, through: 475, by: 50) {
+    canvas.fillColor = Color.white
+    for y in stride(from: 475, through: 25, by: -50) {
+        canvas.drawEllipse(centreX: x, centreY: y, width: 25, height: 25)
+    }
+    
+    let randomvalue = random(from: 1, toButNotIncluding: 5)
+    
+    if randomvalue == 1 { (canvas.drawEllipse(centreX: x, centreY: 35, width: 25, height: 25))
+    }
+    
+}
+
+
+
+
+
+
 
 /*:
  ## Add your code below
@@ -22,7 +43,7 @@ let canvas = Canvas(width: 400, height: 300)
  
  Use whitespace and comments as appropriate.
  */
-// Replace this comment with your first comment – what is the goal of the code you're about to write?
+
 
 
 
