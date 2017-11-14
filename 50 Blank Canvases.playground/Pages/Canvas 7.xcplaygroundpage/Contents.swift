@@ -22,10 +22,32 @@ let canvas = Canvas(width: 400, height: 300)
  
  Use whitespace and comments as appropriate.
  */
-// Replace this comment with your first comment – what is the goal of the code you're about to write?
+//draw thick line
+canvas.defaultLineWidth = 5
 
+//show axes
+canvas.drawAxes()
 
+// draw a horizontal line
+canvas.drawLine(fromX: 0, fromY: 0, toX: 100, toY: 0)
 
+//translate origin to end of line
+canvas.translate(byX: 100, byY: 0)
+
+//rotate canvas
+canvas.rotate(by: 120)
+
+//draw another line
+canvas.drawLine(fromX: 0, fromY: 0, toX: 100, toY: 0)
+
+//translate again
+canvas.translate(byX: 100, byY: 0)
+
+//rotate again
+canvas.rotate(by: 120)
+
+//draw another line
+canvas.drawLine(fromX: 0, fromY: 0, toX: 100, toY: 0)
 /*:
  ## Use source control
  To keep your work organized, and receive feedback, source control is a must.

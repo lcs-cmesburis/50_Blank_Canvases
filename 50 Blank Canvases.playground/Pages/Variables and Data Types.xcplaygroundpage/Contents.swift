@@ -22,8 +22,26 @@ let canvas = Canvas(width: 400, height: 300)
  
  Use whitespace and comments as appropriate.
  */
-// Replace this comment with your first comment – what is the goal of the code you're about to write?
+// Create a variable that can store textand
+var name = "Matthew" // String (text)
+let anotherName = "Annie" // String (text) a constant
 
+// DIfference between a constant and variable
+name = "Jose"
+// anotherName = "Jennifer" // Can't change a constant
+
+// Numbers
+var x = 5 // use "type inference" to guess what date type to use
+x = Int(6.5)
+
+var y : Double = 5.5 // forces the type to be Double
+
+var z : Double = 5
+
+var a = 3.3
+
+var someText = "apple" // creating a new variable and assigning initial value
+//someText = 5 // assignment statement to change a value
 
 
 /*:
